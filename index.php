@@ -16,13 +16,13 @@ $posts = $req->fetchAll();
 <body>
 
 <div class="container-fluid">
-    <h2>Discussion</h2>
+    <h2>Navigation en Ajax</h2>
     <div class="row">
         <div class="col-md-3">
             <form action="#">
                 <select id="posts" class="form-control">
 
-                    <option>Choisir un article</option>
+                    <option value="">Choisir un article</option>
                     <?php foreach ($posts as $post) : ?>
                     <option value="<?= $post->id_post;?>"><?= $post->title;?></option>
                     <?php endforeach;?>
