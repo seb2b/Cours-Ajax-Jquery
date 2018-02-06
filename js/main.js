@@ -1,11 +1,7 @@
 (function($){
 
-  $('#btn-accueil').click(function(){
-    $('#page').load("accueil.php");
-  });
-
-  $('#btn-contact').click(function(){
-      $('#page').load("contact.php");
-  });
+  $('#dpt').change(function(){
+    $('#info-dpt').load("traitement.php?dpt="+$('#dpt').val());
+  })
 
 })(jQuery);

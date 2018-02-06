@@ -7,11 +7,17 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="container-fluid">
-    <button class="btn btn-primary" id="btn-accueil">Accueil</button>
-    <button class="btn btn-primary" id="btn-contact">Contact</button>
-    <div id="page"></div>
-</div>
+
+    <div class="container-fluid">
+        <form action="#">
+            <select id="dpt">
+                <option value="Info">Informatique</option>
+                <option value="Chimie">Chimie</option>
+            </select>
+        </form>
+    </div>
+
+    <div id="info-dpt"></div>
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/main.js"></script>
