@@ -1,7 +1,8 @@
 (function($){
 
-  $('#dpt').change(function(){
-    $('#info-dpt').load("traitement.php?dpt="+$('#dpt').val());
+  $('#posts').change(function(){
+    $('.block-comment').load("traitement.php?id_post="+$('#posts').val());
+    $('.block-comment').fadeIn(500);
   })
 
 })(jQuery);
