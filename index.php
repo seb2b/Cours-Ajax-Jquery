@@ -9,7 +9,7 @@ $posts = $req->fetchAll();
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Ajax Jquery sa mère</title>
+    <title>Ajax Jquery</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -21,12 +21,10 @@ $posts = $req->fetchAll();
         <div class="col-md-3">
             <form action="#">
                 <select id="posts" class="form-control">
-
                     <option value="">Choisir un article</option>
                     <?php foreach ($posts as $post) : ?>
                     <option value="<?= $post->id_post;?>"><?= $post->title;?></option>
                     <?php endforeach;?>
-
                 </select>
             </form>
         </div>
@@ -36,7 +34,7 @@ $posts = $req->fetchAll();
     </div>
 </div>
 
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/main.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
