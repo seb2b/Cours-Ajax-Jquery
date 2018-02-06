@@ -1,5 +1,1 @@
-<p>Block accueil</p>
-<?php
-
-var_dump($_SERVER);
-?>
+<h1>Block accueil</h1>
